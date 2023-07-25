@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravalika's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7fcde2d76e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header"> 
+    <div class="container">
+         <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li> 
+              </ul>
+         </nav>
+         <div class="header-text">
+              <p> Azure Data engineer </p>
+              <h1>Hi, I'm <span>Kindhibai</span> Pravalika From India</h1>
+         </div>
+    </div>
+    <!-------------------about------------------------>
+</div>
+<div class="about">
+     <div class="container">
+         <div class="row">
+              <div class="about-col-1">
+               <img src="assets/user.png">
+          
+              </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>I obtained a master's degree in healthcare informatics from Sacred Heart University</p>
+
+              <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="Skills">
+                   <ul>
+                      <li><span>Languages</span><br>Sql, Python, Pyspark, Snowflake</li>
+                      <li><span>Database</span><br>Microsoft Sql Server, Azure Data bricks, Azure Synapse, MS Excel</li>
+                      <li><span>Data  Visulization</span><br>Power BI, Tableau</li>
+                      <li><span>Version Control</span><br>Git, Git Hub, Bit bucket</li>
+                   </ul>
+               <div class="tab-contents" id="Experience">
+                    <ul>
+                       <li><span>Aug2019-Associate</span><br>Sutherland Global Services</li>
+                       <li><span>May2020-Data Analyst</span><br>Sutherland Global Services </li>
+                    </ul>
+               </div>
+               <div class="tab-contents" id="Education">
+                    <ul>
+                       <li><span>2019</span><br>Bachelor's From Aurora's Degree & P.G college</li>
+                       <li><span>2022-2023</span><br>Master's from Sacred Heart University </li>
+                    </ul>
+               </div>
+         </div>
+     </div>
+</div>
+<!-- -------------------services----------------  -->
+<div id="Services">
+     <div class="container">
+         <h1 class="sub-title">My Services</h1>
+         <div class="services-list">
+             <div>
+                 <i class="fa-solid fa-code"></i>
+                 <h2>Data engineer</h2>
+                 <p>Data engineering plays an important role in the data lifecycle. It involves designing, data collection, data storage, and processing. Converting raw data into useful data using Python libraries.</p>
+                 <a href="#">Learn More</a>
+             </div>
+             <div>
+                 <i class="fa-solid fa-crop-simple"></i>
+                 <h2>Data engineer</h2>
+                 <p>Data engineering plays an important role in the data lifecycle. It involves designing, data collection, data storage, and processing. Converting raw data into useful data using Python libraries.</p>
+                 <a href="#">Learn More</a>
+             </div>
+             <div>
+                 <i class="fa-brands fa-app-store-ios"></i> 
+                 <h2>Data engineer</h2>
+                 <p>Data engineering plays an important role in the data lifecycle. It involves designing, data collection, data storage, and processing. Converting raw data into useful data using Python libraries.</p>
+                 <a href="#">Learn More</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!--------------portfolio--------------- -->
+ <div class="container">
+     <h1 class="sub-title">My work</h1>
+     <div class="work-list">
+         <div class="work">
+             <img src="assets/work-1.jpg">
+             <div class="layer">
+                 <h3>Data Engineering Social Media</h3>
+                 <p>Data Engineering Social Media layer involves designing datapipeline, data modules, Storage Solutions</p>
+                 <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+             </div>
+         </div>
+         <div class="work">
+             <img src="assets/work-2.png">
+             <div class="layer">
+                 <h3>Data Base</h3>
+                 <p>The database layer plays a main role in handling data persistence and retrieval and data can be stored, managed and accessed</p>
+                 <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+             </div>
+         </div>
+         <div class="work">
+             <img src="assets/work-3.png.jpg">
+             <div class="layer">
+                 <h3>Big data layer</h3>
+                 <p>The Big Data Visualization Layer refers to the component in a big data architecture responsible for visualizing and presenting large-scale data in a meaningful and interactive way.</p>
+                 <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+                </div>
+           </div>
+           
+               </div>
+          </div>
+
+     </div>
+
+ </div>
+ 
+          </div >
+     </div>
+</div>
+</div>
+ 
+
+    </div>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabContents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    for (var tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for (var tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+</body>
+
+
+
+ 
