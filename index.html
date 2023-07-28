@@ -44,7 +44,7 @@
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-
+                    
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
                             <li><span>Languages</span><br>Sql, Python, Pyspark, Snowflake</li>
@@ -65,14 +65,29 @@
                             <li><span>2022-2023</span><br>Master's from Sacred Heart University</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div Section id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
+                    
+                    <script>
+                        var tablinks = document.getElementsByClassName("tab-links");
+                        var tabContents = document.getElementsByClassName("tab-contents");
+                    
+                        function opentab(tabname) {
+                            for (var tablink of tablinks) {
+                                tablink.classList.remove("active-link");
+                            }
+                    
+                            for (var tabcontent of tabContents) { // Corrected variable name 'tabcontents' to 'tabContents'
+                                tabcontent.classList.remove("active-tab");
+                            }
+                    
+                            event.currentTarget.classList.add("active-link");
+                            document.getElementById(tabname).classList.add("active-tab");
+                        }
+                    </script>
+
+<div section id="services">
+    <div class="container">
+        <!-- Your "My Services" section content goes here -->
+        <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -91,85 +106,80 @@
                     <h2>Data engineer</h2>
                     <p>Data engineering plays an important role in the data lifecycle. It involves designing, data collection, data storage, and processing. Converting raw data into useful data using Python libraries.</p>
                     <a href="#">Learn More</a>
-                </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <!-- Your "My Work" section content goes here -->
+        <div class="work">
+            <img src="assets/work-1.png">
+            <div class="layer">
+                <h3>Data Engineering Social Media</h3>
+                <p>Data Engineering Social Media layer involves designing datapipeline, data modules, Storage Solutions</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
         </div>
-    </div>
-    
+         <div class="work">
+            <img src="assets/work-2.png">
+            <div class="layer">
+                <h3>Database</h3>
+                <p>The database layer plays a main role in handling data persistence and retrieval and data can be stored, managed and accessed</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="assets/work-3.png">
+            <div class="layer">
+                <h3>Big data layer</h3>
+                <p>The Big Data Visualization Layer refers to the component in a big data architecture responsible for visualizing and presenting large-scale data in a meaningful and interactive way.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+    </div> 
+    <a href="#" class="btn">see more</a> 
+</div>
+
+<div section id="contact">
     <div class="container">
-        <h1 class="sub-title">My work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="assets/work-1.png">
-                <div class="layer">
-                    <h3>Data Engineering Social Media</h3>
-                    <p>Data Engineering Social Media layer involves designing datapipeline, data modules, Storage Solutions</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Pravalika Mutharasi@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="https://www.linkedin.com/feed/?trk=404_page"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+                <a href="" class="btn">Download CV</a>
             </div>
-             <div class="work">
-                <img src="assets/work-2.png">
-                <div class="layer">
-                    <h3>Database</h3>
-                    <p>The database layer plays a main role in handling data persistence and retrieval and data can be stored, managed and accessed</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
             </div>
-            <div class="work">
-                <img src="assets/work-3.png">
-                <div class="layer">
-                    <h3>Big data layer</h3>
-                    <p>The Big Data Visualization Layer refers to the component in a big data architecture responsible for visualizing and presenting large-scale data in a meaningful and interactive way.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div> 
-        <a href="#" class="btn">see more</a> 
-    </div>
-    
-    <div section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">contact Me</h1>
-                    <p> <i class="fa-solid fa-paper-plane"></i> Pravalika Mutharasi@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-volume"></i> 660-528-1870</p>
-                    <div>class="social-icons">
-                        <a href=" https://facebook.com/ "i class="fa-brands fa-facebook-messenger"></i></a>
-                        <a href="https://www.linkedin.com/feed/?trk=404_page"i class="fa-brands fa-linkedin"></i></a>
-                        
-                </div>
-                <a href="" class="btn  ">Download Cv</a>
-            </div>
-        </div> class = "contact-right">
-              <form>
-                <input type="text" name="Name"placeholder="Your Name" required>
-                <input type="email" name="Name" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea> </textarea>
-                <button type="submit" class="btn btn2">submit</button>
-            </form>
         </div>
-   </div>
-</div>
-<div>class="copyright">
-    <p>Azure Data engineering @ kindhibai Pravalika. Made with <i class="fa-solid fa-heart"></i> by data engineer</p>
+    </div>
 </div>
 </div>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabContents = document.getElementsByClassName("tab-contents");
+<div class="copyright">
+<p>Azure Data engineering @ kindhibai Pravalika. Made with <i class="fa-solid fa-heart"></i> by data engineer</p>
+</div>
 
-        function opentab(tabname) {
-            for (var tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (var tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+<!-- Add your JavaScript code here, after the content -->
+<script> 
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+  
+function closemenu() {
+    sidemenu.style.right = "200px";
+}
+</script>
 </body>
 </html>
