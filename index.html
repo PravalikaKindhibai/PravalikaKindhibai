@@ -1,185 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pravalika's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="https://kit.fontawesome.com/7fcde2d76e.js" crossorigin="anonymous"></script>
+	<!--  *****   Link To Custom CSS Style sheet   *****  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--  *****   Link To Font Awsome Icons   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!--   ***** Link To Magnific Popup CSS *****   -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+
+	<!--   ***** Links To OwlCarousel CSS *****   -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pravalika Portfolio</title>
 </head>
 <body>
-    <div id="header"> 
-        <div class="container">
-            <nav>
-                <ul> id="sidemenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li> 
-                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
-            </nav>
-            <div class="header-text">
-                <p>Azure Data engineer</p>
-                <h1>Hi, I'm <span>Kindhibai</span> Pravalika From India</h1>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="assets/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I obtained a master's degree in healthcare informatics from Sacred Heart University</p>
+<!--   *** Website Container Starts ***   -->
+<div class="Website-container">
+	
+<!--   *** Home Section Starts ***   -->
+<section class="home" id="home">
+	
+	<!--   === Navbar Starts ===   -->
+	<nav class="navbar">
+		<div class="logo">
+			Pravalika Kindhibai
+		</div>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span>Languages</span><br>Sql, Python, Pyspark, Snowflake</li>
-                            <li><span>Database</span><br>Microsoft Sql Server, Azure Data bricks, Azure Synapse, MS Excel</li>
-                            <li><span>Data Visualization</span><br>Power BI, Tableau</li>
-                            <li><span>Version Control</span><br>Git, GitHub, Bitbucket</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                            <li><span>Aug 2019 - Associate</span><br>Sutherland Global Services</li>
-                            <li><span>May 2020 - Data Analyst</span><br>Sutherland Global Services</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>2019</span><br>Bachelor's From Aurora's Degree & P.G college</li>
-                            <li><span>2022-2023</span><br>Master's from Sacred Heart University</li>
-                        </ul>
-                    </div>
-                    
-                    <script>
-                        var tablinks = document.getElementsByClassName("tab-links");
-                        var tabContents = document.getElementsByClassName("tab-contents");
-                    
-                        function opentab(tabname) {
-                            for (var tablink of tablinks) {
-                                tablink.classList.remove("active-link");
-                            }
-                    
-                            for (var tabcontent of tabContents) { // Corrected variable name 'tabcontents' to 'tabContents'
-                                tabcontent.classList.remove("active-tab");
-                            }
-                    
-                            event.currentTarget.classList.add("active-link");
-                            document.getElementById(tabname).classList.add("active-tab");
-                        }
-                    </script>
+		<ul class="nav-links">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#eduaction&experience">Experience</a></li>
+			<li><a href="#certificates">Certificates</a></li>
+		</ul>
 
-<div section id="services">
-    <div class="container">
-        <!-- Your "My Services" section content goes here -->
-        <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Data engineer</h2>
-                    <p>Data engineering plays an important role in the data lifecycle. It involves designing, data collection, data storage, and processing. Converting raw data into useful data using Python libraries.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Data engineer</h2>
-                    <p>Data engineering plays an important role in the data lifecycle. It involves designing, data collection, data storage, and processing. Converting raw data into useful data using Python libraries.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store-ios"></i> 
-                    <h2>Data engineer</h2>
-                    <p>Data engineering plays an important role in the data lifecycle. It involves designing, data collection, data storage, and processing. Converting raw data into useful data using Python libraries.</p>
-                    <a href="#">Learn More</a>
-    </div>
+		<a href="#contact" class="button-wrapper">
+			<button class="btn contact-btn">Contact</button>
+		</a>
+
+		<div class="menu-btn">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</nav>
+	<!--   === Navbar Ends ===   -->
+
+	<!--   === Hero Starts ===   -->
+	<div class="hero">
+		<div class="hero-text">
+			<h3>Hey, There</h3>
+			<h1>I am Pravalika Kindhibai</h1>
+			<h2>Graduate Student at Sacred Heart University</h2>
+			<p>Completed my Masters in Health Care Informatics! Health Care Informatics is an interdisciplinary field that lies at the intersection of healthcare, information technology, and data management. It focuses on leveraging technology and data to improve the efficiency, quality, and safety of healthcare delivery.</p>
+			
+		</div>
+
+		<div class="hero-image">
+			<img src="images/hero.png">
+		</div>
+	</div>
+	<!--   === Hero Ends ===   -->
+
+	<!--   === Career Bar Starts ===  -->
+	<div class="career-container">
+		<div class="career-item">
+			<span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+			<span class="career-desc">
+				<h2>2.6 Years of</h2>
+				<p>Experience</p>
+			</span>
+		</div>
+	</div>
+	<!--   === Career Bar Ends ===  -->
+
+</section>
+<!--   *** Home Section Ends ***   -->
+
+<!--   *** About Section Starts ***   -->
+<section class="about" id="about">
+	
+	<!--   === About Image Starts ===   -->
+	<div class="about-image">
+		<img src="images/about-img.jpg">
+		<div class="social-media">
+			<i class="fa-brands fa-linkedin-in"></i>
+		</div>
+	</div>
+	<!--   === About Image Ends ===   -->
+
+	<!--   === About Description Starts ===   -->
+	<div class="about-desc">
+		<h3>About Me</h3>
+		<h2>Senior Associate 2.6 years of experience</h2>
+		<p>Over 2.3 years of professional experience with Excellent problem solving and analytical skills. Proficient in ETL workflows, Python, Java, Apache Spark, and AWS. Experienced in data integration, leveraging strong action verbs to ensure smooth data accessibility, and delivering impactful solutions.</p>
+		<div class="about-personal-info">
+			<div><span>Name:</span><span>Pravalika Kindhibai</span></div>
+			<div><span>Email:</span><span>pravalikamutharasi@gmail.com</span></div>
+		</div>
+		<button class="btn download-btn"
+		onclick="window.open('./images/Pravalika_Kindhibai_Resume.pdf')"> Download CV </button>
+	</div>
+	<!--   === About Description Ends ===   -->
+
+</section>
+<!--   *** About Section Ends ***   -->
+
+<!--   *** Resume Section Starts ***   -->
+<section class="resume reusable" id="eduaction&experience">
+	
+	<!--   === Headings Text Starts ===   -->
+	<header class="headings">
+		<h3>Know More About My</h3>
+		<h1>Education & Experience</h1>
+		<p>Master of Science in Health Care Informatics</p>
+	</header>
+	<!--   === Headings Text Ends ===   -->
+
+	<!--   === Resume Row Starts ===   -->
+	<div class="resume-row">
+		
+		<!--   === Left Column Starts ===   -->
+		<div class="column column-left">
+			<header class="sub-heading">
+				<h2>EDUCATION</h2>
+			</header>
+
+			<main class="resume-contents">
+				<div class="box">
+					<h4>March 2022 - June 2023</h4>
+					<h3>Master of Healthcare Informatics</h3>
+					<li>Completed my masters in Healthcare Informatics.</li> 
+					<li>It focuses on leveraging technology and data to improve the efficiency, quality, and safety of healthcare delivery.</li>
+					<h5 class="vanue">Sacred Heart University</h5>
+				</div>
+
+				<div class="box">
+					<h4>June 2016 - July 2019</h4>
+					<h3>Bachelor of Science in Microbiology, Genetics, and Chemistry</h3>
+					<h5 class="vanue">Osmania University</h5>
+				</div>
+			</main>
+		</div>
+		<!--   === Left Column Ends ===   -->
+
+		<!--   === Right Column Starts ===   -->
+		<div class="column column-right">
+			<header class="sub-heading">
+				<h2>EXPERIENCE</h2>
+			</header>
+
+			<main class="resume-contents">
+				<div class="box">
+					<h4>February 2020 - April 2022</h4>
+					<h3>Senior Associate - Collections (L2)</h3>
+					<li>Analyzed 500+ hospital claims, resulting in a 30% improvement in data accuracy.</li>
+					<li>Knowledge of Python Libraries, statistics and experience using statistical packages for analysing datasets.</li> 
+					<li>Verified patient demographics, provider's NPI, referral provider, and past medical history.</li> 
+					<li>Executed actions using EPIC Software for document posting and further processing.</li> 
+					<li>Managed the successful collection of outstanding payments from 1000+ policyholders and healthcare providers, achieving a 90% collection rate.</li> 
+				    <li>Addressed denial reasons by submitting essential documents for claims processing. Utilized data analytics and visualization tools (MS Excel, Power BI, Tableau) for reporting solutions.</li>
+					<li>Managed a database software to store and organize critical patient information. Mentored and guided 5+ lower-level associates, contributing to a 30% improvement in their performance.</li>
+					<li>Achieved recognition as the top performer of the month.</li>
+					</p>
+					<h5 class="vanue">Sutherland Global Services, India</h5>
+				</div>
+			</main>
+		</div>
+		<!--   === Right Column Ends ===   -->
+
+	</div>
+	<!--   === Resume Row Ends ===   -->
+
+</section>
+<!--   *** Resume Section Ends ***   -->
+
+<!--   *** Services Section Starts ***   -->
+<section class="services reusable" id="certificates">
+	
+	<!--   === Headings Text Starts ===   -->
+	<header class="headings">
+		<h3>Explore My</h3>
+		<h1>Certificates</h1>
+	</header>
+	<!--   === Headings Text Ends ===   -->
+
+	<!--   === Services Box Container Starts ===   -->
+	<div class="services-container">
+		
+		<div class="service-box">
+			<div class="icon-wrapper">
+				<i class="fa-solid fa-code"></i>
+			</div>
+			<h2>Devops on AWS Specialization</h2>
+			<div class="btn-container">
+				<button
+				  class="btn btn-color-2 project-btn"
+				  onclick="window.open('https://www.coursera.org/account/accomplishments/specialization/certificate/NH2FSYVC64JM')"
+				>
+				  Show Credentials
+				</button>
+			  </div>
+		</div>
+
+		<div class="service-box">
+			<div class="icon-wrapper">
+				<i class="fa-solid fa-code"></i>
+			</div>
+			<h2>Python Project for Data Engineering</h2>
+			<div class="btn-container">
+				<button
+				  class="btn btn-color-2 project-btn"
+				  onclick="window.open('https://www.coursera.org/account/accomplishments/certificate/KA4PBCXRMNBK')"
+				>
+				  Show Credentials
+				</button>
+			  </div>
+		</div>
+
+		<div class="service-box">
+			<div class="icon-wrapper">
+				<i class="fa-solid fa-code"></i>
+			</div>
+			<h2>Python for Data Science, AI & Development Certification</h2>
+			<div class="btn-container">
+				<button
+				  class="btn btn-color-2 project-btn"
+				  onclick="window.open('https://www.coursera.org/account/accomplishments/certificate/58Z3G8EQ4ADS')"
+				>
+				  Show Credentials
+				</button>
+			  </div>
+		</div>
+
+	</div>
+	<!--   === Services Box Container Ends ===   -->
+</section>
+<!--   *** Services Section Ends ***   -->
+
+<!--   *** Contact Section Starts ***   -->
+<section id="contact">
+	<p class="section__text__p1">Get in Touch</p>
+	<h1 class="title">Contact Me</h1>
+	<div class="contact-info-upper-container">
+	  <div class="contact-info-container">
+		<p><a href="mailto:pravalikamutharasi@gmail.com">Email</a></p>
+	  </div>
+	  <div class="contact-info-container">
+		<p><a href="http://linkedin.com/in/pravalika-mutharasi-242136276">Linkedin</a></p>
+	  </div>
+	</div>
+</section>
+<!--   *** Contact Section Ends ***   -->
+
+<!--   *** Footer Section Starts ***   -->
+<section class="page-footer">
+	
+	<footer class="footer-contents">
+		<a href="#">Pravalika K</a>
+		<p>Copyright &#169; 2023. All Rights Reserved.</p>
+	</footer>
+	
+</section>
+<!--   *** Footer Section Ends ***   -->
+
 </div>
+<!--   *** Website Container Ends ***   -->
 
-<div class="container">
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-        <!-- Your "My Work" section content goes here -->
-        <div class="work">
-            <img src="assets/work-1.png">
-            <div class="layer">
-                <h3>Data Engineering Social Media</h3>
-                <p>Data Engineering Social Media layer involves designing datapipeline, data modules, Storage Solutions</p>
-                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-        </div>
-         <div class="work">
-            <img src="assets/work-2.png">
-            <div class="layer">
-                <h3>Database</h3>
-                <p>The database layer plays a main role in handling data persistence and retrieval and data can be stored, managed and accessed</p>
-                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-        </div>
-        <div class="work">
-            <img src="assets/work-3.png">
-            <div class="layer">
-                <h3>Big data layer</h3>
-                <p>The Big Data Visualization Layer refers to the component in a big data architecture responsible for visualizing and presenting large-scale data in a meaningful and interactive way.</p>
-                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-    </div> 
-    <a href="#" class="btn">see more</a> 
-</div>
+<!--   *** Link To JQuery ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" ></script>
 
-<div section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> Pravalika Mutharasi@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-messenger"></i></a>
-                    <a href="https://www.linkedin.com/feed/?trk=404_page"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="" class="btn">Download CV</a>
-            </div>
+<!--   *** Link To Isotope ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
-            <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+<!--   *** Link To Magnific Popup ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
-<div class="copyright">
-<p>Azure Data engineering @ kindhibai Pravalika. Made with <i class="fa-solid fa-heart"></i> by data engineer</p>
-</div>
+<!--   *** Link To OwlCarousel Js ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<!-- Add your JavaScript code here, after the content -->
-<script> 
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
-    sidemenu.style.right = "0";
-}
-  
-function closemenu() {
-    sidemenu.style.right = "200px";
-}
-</script>
+<!--   *** Link To Custom Script File ***   -->
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
